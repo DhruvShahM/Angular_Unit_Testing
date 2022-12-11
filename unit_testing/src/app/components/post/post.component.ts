@@ -8,14 +8,14 @@ import { Post } from 'src/app/models/post';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent {
-  @Input() post:Post | null=null;
-  @Output() delete=new EventEmitter<void>();
+  @Input() post:Post;
+  @Output() delete=new EventEmitter<Post>();
   
   constructor() { }
 
   onDeletePost(event:Event){
     event.stopPropagation();
-    this.delete.emit();
+    this.delete.emit(this.post);
   }
 
 }
