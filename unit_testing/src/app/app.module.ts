@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorService } from './calculator/calculator.service';
 import { LoggerService } from './Logger/logger.service';
+import { StrengthPipe } from './pipes/Strength/Strength.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StrengthPipe
   ],
   imports: [
     BrowserModule,
