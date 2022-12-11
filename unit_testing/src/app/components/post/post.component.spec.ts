@@ -9,7 +9,7 @@ describe('Post Componenet', () => {
             id: 1, body: 'body 1', title: 'title 1', userId: 1
         };
 
-        comp.post=post;
+        comp.post = post;
 
         comp.delete.pipe(first()).subscribe((selectedPost) => {
             expect(selectedPost).toEqual(post);

@@ -8,7 +8,7 @@ import { Post } from 'src/app/models/post';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent {
-  @Input() post:Post;
+  @Input() post!:Post;
   @Output() delete=new EventEmitter<Post>();
   
   constructor() { }
