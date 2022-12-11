@@ -7,10 +7,12 @@ export class LoggerService {
 
   message: string[] = [];
 
-  constructor() { }
+  constructor() {
+    debugger;
+   }
 
   log(message: string) {
-    debugger
+    debugger;
     this.message.push(message);
   }
 
