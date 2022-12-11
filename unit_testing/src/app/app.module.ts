@@ -9,12 +9,14 @@ import { LoggerService } from './services/Logger/logger.service';
 import { StrengthPipe } from './pipes/Strength/Strength.pipe';
 import { PostsComponent } from './components/posts/posts.component';
 import { PostsService } from './services/Posts/posts.service';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StrengthPipe,
-    PostsComponent
+    PostsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
