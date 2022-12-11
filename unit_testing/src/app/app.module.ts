@@ -8,6 +8,7 @@ import { CalculatorService } from './services/calculator/calculator.service';
 import { LoggerService } from './services/Logger/logger.service';
 import { StrengthPipe } from './pipes/Strength/Strength.pipe';
 import { PostsComponent } from './components/posts/posts.component';
+import { PostsService } from './services/Posts/posts.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,6 @@ import { PostsComponent } from './components/posts/posts.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent,CalculatorService,LoggerService]
+  bootstrap: [AppComponent,CalculatorService,LoggerService,PostsService]
 })
 export class AppModule { }

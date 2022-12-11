@@ -9,7 +9,7 @@ describe('Service: Calculator', () => {
   let calculator: CalculatorService;
   beforeEach(() => {
     console.log('calling before each');
-    mockLoggerService = jasmine.createSpyObj('Anystringservice', ['log']);
+    mockLoggerService = jasmine.createSpyObj(CalculatorService, ['log']);
     calculator = new CalculatorService(mockLoggerService);
   })
 
